@@ -7,7 +7,7 @@ import runpod
 import base64
 MODEL_ID = "Phips/4xNomosWebPhoto_RealPLKSR"
 TILE_W, TILE_H = 1024, 1024
-DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+DEVICE = "cuda"
 UPSCALER = UpscaleWithModel.from_pretrained(MODEL_ID).to(DEVICE)
 
 
