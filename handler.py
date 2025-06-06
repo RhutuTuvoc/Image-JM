@@ -28,7 +28,7 @@ def handler(event):
     duration = time.time() - start_time
     print(f"Upscaling time: {duration:.2f} seconds")
     buffer = io.BytesIO()
-    upscaled_img.save(buffer, format="PNG")  # or "JPEG" as needed
+    upscaled_img.save(buffer, format="JPEG")
     buffer.seek(0)
 
     # Encode to base64
